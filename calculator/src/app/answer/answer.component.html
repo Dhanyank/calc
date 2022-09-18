@@ -1,0 +1,25 @@
+<div class="container col-md-12 mt-0">
+  <div class="d-flex justify-content-center h-100">
+      <div class="card">
+          <div class="card-header">
+              <h3 appHighight class="text-center">CALCULATOR</h3>
+
+          </div>
+          <div class="card-body">
+              <form [formGroup]=resultForm (ngSubmit)="back()">
+                  <div class="input-group form-group">
+
+
+                      <input type= "text" name="input" placeholder={$answer}>
+                  </div>
+                  <div class="form-group">
+                      <!-- event binding  (click)="login()" -->
+                      <input type="submit" value="back"
+                          class="btn float-right submit_btn " style="width:50%">
+                  </div>
+              </form>
+          </div>
+      </div>
+  </div>
+  
+</div>
